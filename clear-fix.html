@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>clear-fix</title>
+  <style>
+    .clearfix {
+      background: #000;
+      color: white;
+    }
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .floated {
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="clearfix">
+    <div class="floated">float a</div>
+    <div class="floated">float b</div>
+    <div class="floated">float c</div>
+    <div class="floated">float d</div>
+  </div>
+</body>
+</html>
