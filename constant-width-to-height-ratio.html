@@ -5,8 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>constant width to height ratio</title>
+  <style>
+    .constant-width-to-height-radio {
+      background: #333;
+      width: 50%;
+    }
+    .constant-width-to-height-radio::before {
+      content: '';
+      padding-top: 100%;
+      float: left;
+    }
+    .constant-width-to-height-radio::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="constant-width-to-height-radio"></div>
 </body>
 </html>
