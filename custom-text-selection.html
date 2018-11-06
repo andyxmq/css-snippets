@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>custom text selection</title>
+  <style>
+    ::selection {
+      background: #aaa;
+      color: black;
+    }
+    .custom-text-selection::selection {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>自定义选择文本的背景颜色</p>
+  <p class="custom-text-selection">select some of this text.</p>
+</body>
+</html>
